@@ -40,6 +40,7 @@ jobs:
         repository: "pradeepreddyvangala/basic_repo"
         login: "pradeepvangala369@gmail.com"
         password: "Vpr@d99p123"
+        image_tag: it
         platforms: linux/amd64,linux/arm64
 
     # Add a test script to composer.json, for instance: "test": "vendor/bin/phpunit"
