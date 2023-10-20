@@ -1,4 +1,4 @@
-FROM php:7.2-alpine AS hoops
+FROM php:7.2-alpine AS hoops 
 
 # install composer
 RUN apk update \
