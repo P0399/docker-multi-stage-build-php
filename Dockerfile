@@ -1,4 +1,4 @@
-FROM php:7.2-alpine AS deps
+FROM php:7.2-alpine AS oops
 
 # install composer
 RUN apk update \
@@ -22,6 +22,6 @@ FROM php:7.2-alpine
 
 # we don't need to do anything here by copy the `/app` folder from the
 # `deps` stage above. Its /app folder will have all the vendor files etc
-COPY --from=deps /app /app
+COPY --from=oops /app /app
 
 CMD ["/app/bin/hello"]
